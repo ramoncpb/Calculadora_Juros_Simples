@@ -6,7 +6,16 @@
         
         <script>
             function calcular(){
-                
+                let capital = parseFloat(document.getElementById("valorInicial").value);
+
+                let txJuros = parseFloat(document.getElementById("taxaJuros").value);
+
+                let tempo = parseInt(document.getElementById("periodo").value);
+
+                let juros = (
+                    
+                    if()
+                );
             }
         </script>
     </head>
@@ -20,13 +29,20 @@
 
         <h3>Insira a taxa de juros:</h3>
         <input id="taxaJuros" type="number">
+        <p>Qual parâmetro está sendo utilizado para calcular?</p>
+        <input id="mensalJuros" type="radio" name="tipoTx" value="M">Mensal </br>
+        <input id="anualJuros" type="radio" name="tipoTx" value="A">Anual </br>   
 
         <h3>Insira o periodo desejado:</h3>
         <input id="periodo" type="number"></br></br>
+        <p>Qual parâmetro está sendo utilizado para calcular?</p>
+        <input id="mensalPeriodo" type="radio" name="tipoTx" value="M">Mensal </br>
+        <input id="anualPeriodo" type="radio" name="tipoTx" value="A">Anual </br> 
 
         <button onclick="calcular()">Calcular</button></br>
 
         <h3>Resultado:</h3>
+        
         
     </body>
 
