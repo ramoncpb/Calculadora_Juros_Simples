@@ -4,37 +4,40 @@
         <meta charset="UTF-8"/>
         <title>Calculadora de Juros</title>
         <script src="calc_code.js"></script>
+        <link rel="stylesheet" href="calc_style.css">
     </head>
 
     <body>
-        <h1>JUROS SUPER CALC!</h1>
-        <h2>Calcule aqui o juros simples</h2>
-        <p><b>Lembre-se sempre de padronizar as medidas ao informar os valores para calculo.</b></p>
+        <main>    
+            <h1>JUROS SUPER CALC!</h1>
+            <h2>Calcule aqui o juros simples</h2>
+            <p><b>Lembre-se sempre de padronizar as medidas ao informar os valores para calculo.</b></p>
 
-        <h3>Insira o valor do capital inicial:</h3>
-        <input id="capitalInicial" type="number">
+            <h3>Insira o valor do capital inicial:</h3>
+            <input id="capitalInicial" type="number">
 
-        <h3>Insira a taxa de juros em (%):</h3>
-        <input id="taxaJuros" type="number">   
+            <h3>Insira a taxa de juros em (%):</h3>
+            <input id="taxaJuros" type="number">   
 
-        <h3>Insira o periodo desejado:</h3>
-        <input id="periodo" type="number">
+            <h3>Insira o periodo desejado:</h3>
+            <input id="periodo" type="number">
 
-        <h3>Por quanto tempo?</h3>
-        <input id="tempo" type="number"></br></br>
+            <h3>Por quanto tempo?</h3>
+            <input id="tempo" type="number"></br></br>
 
-        <!--<p>Qual parâmetro está sendo utilizado para calcular?</p>
-        <input id="mensalPeriodo" type="radio" name="tipoPr" value="Meses">Mensal </br>
-        <input id="anualPeriodo" type="radio" name="tipoPr" value="Anos">Anual </br> -->
+            <!--<p>Qual parâmetro está sendo utilizado para calcular?</p>
+            <input id="mensalPeriodo" type="radio" name="tipoPr" value="Meses">Mensal </br>
+            <input id="anualPeriodo" type="radio" name="tipoPr" value="Anos">Anual </br> -->
 
-        <button onclick="calcular()">Calcular</button></br>
+            <button onclick="calcular()">Calcular</button></br>
 
-        <h3>Resultado:</h3>
-        <p><b>Juros</b></p>
-        <p id="resultado">Esperando os valores ;)</p>
+            <h3>Resultado:</h3>
+            <p><b>Juros</b></p>
+            <p id="resultado">Esperando os valores ;)</p>
 
-        <p><b>Somatória dos juros será:</b></p>
-        <p id="jurosAcu">...</p>
+            <p><b>Somatória dos juros após o tempo escolhido será:</b></p>
+            <p id="jurosAcu">...</p>
+        </main>
     </body>
 
 </html>
